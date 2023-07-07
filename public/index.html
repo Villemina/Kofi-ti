@@ -11,7 +11,6 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png"/>
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
-    <link rel="stylesheet" href="style.scss">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -21,167 +20,11 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Kofi&Ti</title>
 </head>
 <body>
 <noscript>You need to enable JavaScript to run this app.</noscript>
-
-<header class="header__menu__container">
-    <div class="logo">Kofi&Ti<br>Kawiarnia Artystyczna</div>
-    <ul class="menu__list">
-        <li><a href="#home" class="menu__list__element">Strona Główna</a></li>
-        <li><a href="#menu" class="menu__list__element">Menu</a></li>
-        <li><a href="#events" class="menu__list__element">Wydarzenia</a></li>
-        <li><a href="#contact" class="menu__list__element">Kontakt</a></li>
-    </ul>
-    <div>
-        <a href="#booking" class="menu__booking">Rezerwacje</a>
-    </div>
-</header>
-<noscript>You need to enable JavaScript to run this app.</noscript>
 <div id="root"></div>
-
-<div class="slider">
-    <div class="slider-track">
-        <div class="slide">
-            <img src="images/coffee-flower.jpg" alt="coffee and flowers">
-        </div>
-        <div class="slide">
-            <img src="images/collage.jpg" alt="snacks and pizza collage">
-        </div>
-        <div class="slide">
-            <img src="images/logo.jpg" alt="coffee logo">
-        </div>
-        <div class="slide">
-            <img src="images/interior.jpg" alt="interior of coffee shop">
-        </div>
-        <div class="slide">
-            <img src="images/latte-art-@harshlight-1024x683.jpg" alt="latte art">
-        </div>
-        <div class="slide">
-            <img src="images/menu.jpg" alt="coffee and menu">
-        </div>
-        <div class="slide">
-            <img src="images/product.jpg" alt="assortment of products">
-        </div>
-        <div class="slide">
-            <img src="images/promo.jpg" alt="garden outside">
-        </div>
-        <div class="slide">
-            <img src="images/coffee-flower.jpg" alt="coffee and flowers">
-        </div>
-        <div class="slide">
-            <img src="images/collage.jpg" alt="snacks and pizza collage">
-        </div>
-        <div class="slide">
-            <img src="images/logo.jpg" alt="coffee logo">
-        </div>
-        <div class="slide">
-            <img src="images/interior.jpg" alt="interior of coffee shop">
-        </div>
-        <div class="slide">
-            <img src="images/latte-art-@harshlight-1024x683.jpg" alt="latte art">
-        </div>
-        <div class="slide">
-            <img src="images/menu.jpg" alt="coffee and menu">
-        </div>
-        <div class="slide">
-            <img src="images/product.jpg" alt="assortment of products">
-        </div>
-        <div class="slide">
-            <img src="images/promo.jpg" alt="garden outside">
-        </div>
-    </div>
-</div>
-
-<section class="header__wrapper__container">
-    <div class="sidebar__opening__times">
-        <div class="opening__times__header">
-            <h2>Godziny Otwarcia</h2>
-        </div>
-        <div class="opening__times__content">
-            <ul class="opening__times__list">
-                <li class="opening__day">Poniedziałek: 12:00 - 20:00</li>
-                <li class="opening__day">Wtorek: 12:00 - 20:00</li>
-                <li class="opening__day">Środa: Nieczynne</li>
-                <li class="opening__day">Czwartek: 12:00 - 20:00</li>
-                <li class="opening__day">Piątek: 12:00 - 21:00</li>
-                <li class="opening__day">Sobota: 14:00 - 22:00</li>
-                <li class="opening__day">Niedziela: 14:00 - 20:00</li>
-            </ul>
-        </div>
-    </div>
-
-</section>
-
-<section class="offer__section__container">
-    <div class="offer__display__box">
-        <img src="./images/iced-coffee.png" alt="mrożona kawa" class="offer__image">
-        <h3 class="offer__text__header">Kofi&ti Classic</h3>
-        <p class="offer__text__content">Rozkoszuj się aromatem kawy i herbaty w naszej kawiarni. Uczucie popołudniowej
-            ekstazy, smak esencji życia. Złociste promienie słońca tańczą w filiżankach, rozpalając zmysły. Delikatność
-            herbaty
-            wznosi cię na chmurach, podczas gdy kawa budzi twoje zmysły do życia. Wybierz swój ulubiony smak i pozwól
-            się
-            ponieść unikalnemu doświadczeniu.</p>
-        <button class="offer__btn">
-            <a href="#menu" class="menu__nav">Zobacz naszą ofertę</a>
-        </button>
-    </div>
-    <div class="offer__display__box">
-        <img src="./images/Drinks-14-500x500.jpg" alt="zimne napoje" class="offer__image">
-        <h3 class="offer__text__header">Coś na ochłode...</h3>
-        <p class="offer__text__content">Odkryj rozkosz zimnych napojów i wykwintnych alkoholi w naszej kawiarni.
-            Odświeżające koktajle i orzeźwiające piwa rzemieślnicze. Zanurz się w soczystych smakach, które ukoią twoje
-            podniebienie. Poczuj dreszczyk emocji w chłodnych łykach, które ożywią twój nastrój. Dołącz do naszej
-            niezapomnianej podróży smaków już dziś!</p>
-        <button class="offer__btn">
-            <a href="#menu" class="menu__nav">Zobacz naszą ofertę</a>
-        </button>
-    </div>
-    <div class="offer__display__box">
-        <img src="./images/przekąska.jpg" alt="Blok czekoladowy z kawą" class="offer__image">
-        <h3 class="offer__text__header">Dla każdego smakosza.</h3>
-        <p class="offer__text__content">Rozpływaj się w rozkosznych przekąskach i wykwintnych ciastach w naszej
-            kawiarni.
-            Poczuj wybuch smaków na swoim podniebieniu. Przebieraj w różnorodnych przekąskach, które podkreślą twoje
-            kulinarne
-            upodobania. Każdy kęs to podróż do niebiańskiego raju smaków. Ciesz się aromatycznymi napojami i osiągnij
-            harmonię
-            smaków.</p>
-        <button class="offer__btn">
-            <a href="#menu" class="menu__nav">Zobacz naszą ofertę</a>
-        </button>
-    </div>
-</section>
-
-<section class="about__container">
-    <div class="about__text__section">
-        <h2 class="about__header">O Nas</h2>
-        <p class="about__text">Istniejemy od 2011 roku i zdobyliśmy popularność wśród mieszkańców Radzynia Podlaskiego.
-            Jesteśmy znani nie tylko z doskonałej kawy i szerokiego wyboru piw rzemieślniczych, ale również z
-            organizacji
-            licznych koncertów, wystaw, pokazów filmowych, spotkań autorskich, warsztatów i występów artystycznych.
-            Lokal
-            znajduje się w centrum miasta przy ulicy Warszawskiej. Oferujemy salę barową, mniejsze pomieszczenie i dużą
-            salę
-            koncertową. Posiadamy także przylegający ogródek. Nasza kawiarnia cieszy się popularnością zarówno wśród
-            mieszkańców, jak i turystów, serwując kawę, herbatę, napoje, przekąski i różnorodne dania.</p>
-        <img src="./images/coffee-logo.png" alt="kawa logo" class="images__gallery">
-    </div>
-    <div class="about__images">
-        <img src="./images/bilety.jpg" alt="zaproszenie na koncert" class="images__gallery">
-        <img src="./images/lekcje.jpg" alt="warsztaty jezykowe" class="images__gallery">
-        <img src="./images/koncert.jpg" alt="fotografie z koncertu" class="images__gallery">
-    </div>
-</section>
-
-<footer class="footer-main-container">
-    <div class="footer-container">
-        <p class="copyright-footer">Copyright</p>
-        <p class="main-name-page">kofi&ti.pl</p>
-    </div>
-</footer>
 
 <!--
   This HTML file is a template.
