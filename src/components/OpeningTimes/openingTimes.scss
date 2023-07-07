@@ -1,0 +1,109 @@
+@import "../scssVariables/basic/colors";
+
+.container__opening-times {
+  background-color: $color-primary;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 3rem;
+  color: $color-text;
+  .opening__times-card {
+    width: 40%;
+    height: 60%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    .opening__times-list{
+      list-style: none;
+}}
+.clock {
+  position:relative;
+  width: 300px;
+  height: 300px;
+  background-color: $color-offer;
+  box-shadow: 3px 3px 10px $color-secondary;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover{
+  opacity:0.75 ;
+    transform: scale(1.1);
+}
+}
+.clock-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: $color-red;
+  border-radius: 50%;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+  position: absolute;
+  background-color: $color-red;
+  transform-origin: bottom;
+
+
+}
+
+.hour-hand {
+  width: 6px;
+  height: 80px;
+  border-radius: 6px;
+  transform: rotate(0deg);
+  top: 4.25rem;
+}
+
+.minute-hand {
+  width: 4px;
+  height: 120px;
+  border-radius: 4px;
+  transform: rotate(0deg);
+  top: 2rem;
+}
+
+.second-hand {
+  width: 2px;
+  height: 140px;
+  border-radius: 2px;
+  transform: rotate(0deg);
+  background-color:$color-footer;
+  top: 1rem;
+
+}
+
+.clock-text {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+}
+
+
+.opening__times-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.opening__times-content {
+  font-size: 16px;
+}
+
+.opening__times-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.opening-day {
+  margin-bottom: 10px;
+}}
