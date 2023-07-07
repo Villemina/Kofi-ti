@@ -1,0 +1,106 @@
+@import "../scssVariables/basic/colors";
+
+
+.slider-background {
+  background-color: $color-primary;
+}
+
+.slider {
+  margin: 0 8%;
+  width: 84%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+    transition: all 0.5s ease;
+  }
+}
+
+.current {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+@media screen and (min-width: 600px) {
+  .slide img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.current {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.content {
+  position: absolute;
+  top: 20rem;
+  left: 8rem;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  animation: slide-up 1s ease 2s;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+
+  > * {
+    color: $color-text;
+    opacity: 1;
+    margin-bottom: 1rem;
+  }
+
+  .--btn-primary {
+    padding: 0.35rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    box-shadow: 5px 7px 8px rgba(239, 243, 179, 0.3);
+    background-color: $color-blue;
+    font-weight: bold;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    visibility: visible;
+    top: 20rem;
+  }
+  100% {
+    visibility: visible;
+    top: 16rem;
+  }
+}
+
+.arrow-prev,
+.arrow-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: $color-nav;
+  z-index: 1000;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem;
+  border: 1px transparent;
+  border-radius: 50%;
+
+  &:hover {
+    color: $color-blue;
+  }
+}
+
+.arrow-prev {
+  left: 2rem;
+}
+
+.arrow-next {
+  right: 2rem;
+}

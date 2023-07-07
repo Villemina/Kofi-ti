@@ -15,7 +15,7 @@ body {
 
 .slider-track {
   display: flex;
-  width: calc(450px * 12); /* Updated the calculation based on the number of slides */
+  width: calc(450px * 12);
   animation: scroll 40s linear infinite;
 
 
@@ -24,7 +24,7 @@ body {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-450px * 6)); /* Updated the calculation based on the number of slides */
+      transform: translateX(calc(-450px * 6));
     }
   }
 
