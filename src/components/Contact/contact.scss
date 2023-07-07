@@ -1,0 +1,76 @@
+.contact__container {
+  position: relative;
+  inset: 3rem;
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-text;
+  color: $color-darkcoffee;
+
+  .contact__header {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+  }
+
+  .contact__box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    .contact__box__header {
+      font-size: 2rem;
+      padding: 1rem;
+    }
+
+    .contact__form__box {
+      padding: 1rem;
+      color: $color-lightcoffee;
+      font-size: 1.25rem;
+
+      .contact__field {
+        display: flex;
+        inline-size: 2rem;
+        gap: 1rem;
+
+        input {
+          height: 1.5rem;
+          margin: 0.5rem 0;
+          padding: 0.75rem;
+        }
+
+        textarea {
+          height: 10rem;
+          width: 27rem;
+        }
+      }
+
+      .contact__input__send {
+        margin: 0.5rem;
+        padding: 10px 25px;
+        color: $color-buttons;
+        border: 1px transparent;
+        border-radius: 20px;
+        font-weight: bold;
+        background-color: $color-darkcoffee;
+
+      }
+      .contact__input__send:hover {
+        background-color: $color-nav;
+        color: $color-hover;
+      }
+    }
+    .contact__otherinfo{
+      margin-top: 1rem;
+      .contact__info__content{
+        margin: 1rem 0;
+        .social-media-icons a{
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
