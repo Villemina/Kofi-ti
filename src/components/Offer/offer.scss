@@ -1,0 +1,54 @@
+@import "../scssVariables/basic/colors";
+
+.offer__section__container {
+  display: flex;
+  justify-content: center;
+  background-color: $color-primary;
+  width: 100%;
+  padding: 2rem;
+
+  .offer__display-box {
+    padding: 2rem;
+    background-color: $color-pink;
+    margin: 4rem 1rem ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover{
+      transform: scale(1.1);
+      filter: drop-shadow(0.75rem 0.75rem 0.5rem);
+    }
+
+
+    .offer-image {
+      width: 20rem;
+      height: 20rem;
+    }
+
+    .offer__text-header {
+      padding: 1rem 0;
+      font-size: 2rem;
+      color: $color-red;
+
+    }
+
+    .offer__text-content {
+      margin-bottom: 1rem;
+      color: $color-red;
+    }
+
+    .btn-secondary {
+      border: 1px transparent;
+      margin: 1rem;
+      border-radius: 20px;
+      padding: 1rem;
+      background-color: $color-buttons;
+
+      .menu-nav {
+        font-weight: bold;
+        color: $color-blue;
+        text-decoration: none;
+      }
+    }
+  }
+}
