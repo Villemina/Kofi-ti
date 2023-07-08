@@ -1,0 +1,32 @@
+@import "../scssVariables/basic/colors";
+.about__container {
+  background-color: $color-danger;
+
+  padding: 4rem;
+  display: flex;
+
+  .about__text-section {
+    color: $color-text;
+    backdrop-filter: drop-shadow(3px 3px 3px 0,5);
+    .about__text-header{
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-size: 3rem;
+    }
+    .about__text-content{
+      font-size: 1.5rem;
+    }
+  }
+
+  .images__gallery {
+    height: 20rem;
+    width: 20rem;
+    margin: 1rem;
+    filter: grayscale(1);
+    &:hover{
+      filter: none;
+      transform: scale(1.2);
+      transition: bottom;
+    }
+  }
+}
