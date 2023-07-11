@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './openingTimes.scss';
+import clockImage from './images/clock.png';
+import icedCoffeeImage from "../Offer/images/iced-coffee.png";
 
 const OpeningTimes = () => {
     const WallClock = () => {
@@ -20,6 +22,7 @@ const OpeningTimes = () => {
             <div className="container__opening-times">
                 <div className="clock">
                     <div className="clock-circle"></div>
+                    <img src={clockImage} alt="zegar" className="clock-image" />
                     <div className="hour-hand" style={{ transform: `rotate(${(currentTime.getHours() % 12) * 30 + currentTime.getMinutes() * 0.5}deg)` }}></div>
                     <div className="minute-hand" style={{ transform: `rotate(${currentTime.getMinutes() * 6}deg)` }}></div>
                     <div className="second-hand" style={{ transform: `rotate(${currentTime.getSeconds() * 6}deg)` }}></div>

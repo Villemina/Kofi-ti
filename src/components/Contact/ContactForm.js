@@ -1,6 +1,7 @@
 import React, {useRef} from 'react';
 import emailjs from '@emailjs/browser';
-const Contact = () => {
+import './contact.scss'
+const ContactForm = () => {
     const form = useRef()
     const sendEmail = (e) => {
         e.preventDefault();
@@ -15,14 +16,14 @@ const Contact = () => {
     return (
         <section>
             <div className="container">
-                <h2 className="--text-center">Skontaktuj się z nami...</h2>
-                <form ref={form}  onSubmit={sendEmail} className="--form-control--card">
+                <h2 className="container__text-header">Skontaktuj się z nami...</h2>
+                <form ref={form}  onSubmit={sendEmail} className="form__control-card">
                     <input type="text" placeholder="Imię" name='user_name' required/>
                     <input type="text" placeholder="Nazwisko" name='user_surname' required/>
                     <input type="email" placeholder="Email" name='user_email' required/>
                     <input type="tel" placeholder="Telefon" name='user_tel' required/>
                     <textarea name="message"  cols="30" rows="6"></textarea>
-                    <button type='submit' className="--btn --btn-primary">Wyślij wiadomość</button>
+                    <button type='submit' className="form__btn-primary">Wyślij wiadomość</button>
                 </form>
                 <div className="contact__otherinfo">
                     <div className="contact__info">
@@ -59,4 +60,4 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+export default ContactForm;

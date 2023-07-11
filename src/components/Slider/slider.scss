@@ -50,6 +50,7 @@
   animation: slide-up 1s ease 2s;
   animation-fill-mode: forwards;
   visibility: hidden;
+  transition: all 500ms ease-in;
 
   > * {
     color: $color-text;
