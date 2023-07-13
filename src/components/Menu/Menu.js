@@ -1,38 +1,43 @@
-import React from 'react';
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import './menu.scss'
+import { FaBars, FaTimes } from 'react-icons/fa';
+import './menu.scss';
 
-const Menu = () => {
+function Menu() {
+    const [openLinks, setOpenLinks] = useState(false);
+    const [closeLinks, setCloseLinks] = useState(false);
+
+    const toggleCloseNavbar = () => {
+        setCloseLinks(!closeLinks);
+    };
+    const toggleNavbar = () => {
+        setOpenLinks(!openLinks);
+    };
     return (
-        <Navbar bg="light" expand="lg">
-            <Container>
-                <Navbar.Brand href="#home">Kofi&Ti</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link >
-                            <Link to="/">Strona Główna</Link>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/about">Menu</Link>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/events">Wydarzenia</Link>
-                        </Nav.Link>
-                        <Nav.Link>
-                            <Link to="/contact">Kontakt</Link>
-                        </Nav.Link>
-                    </Nav>
-                    <Nav.Link >
-                        <Link to="/">Rezerwacje</Link>
-                    </Nav.Link>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        <div className="navbar">
+            <div className="nav__content-one" id={openLinks ? "open" : "close"}>
+                <h2 className="logo">Kofi&Ti</h2>
+                <div className="hiddenLinks">
+                    <Link to="/"> Strona Główna </Link>
+                    <Link to="/menu"> Menu </Link>
+                    <Link to="/about"> Wydarzenia </Link>
+                    <Link to="/contact"> Kontakt </Link>
+                </div>
+            </div>
+            <div className="nav__content-two">
+                <Link to="/"> Strona Główna </Link>
+                <Link to="/menu"> Menu </Link>
+                <Link to="/about"> Wydarzenia </Link>
+                <Link to="/contact"> Kontakt </Link>
+                <button onClick={toggleNavbar}>
+                    <FaBars />
+                </button>
+                <button onClick={toggleCloseNavbar}>
+                     <FaTimes/>
+                </button>
+            </div>
+        </div>
     );
-};
+}
 
 export default Menu;

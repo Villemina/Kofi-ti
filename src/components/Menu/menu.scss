@@ -1,9 +1,99 @@
 @import "../scssVariables/basic/colors";
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Poppins:wght@400;700&display=swap');
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: $color-primary;
+  display: flex;
+  flex-direction: row;
+
+  .nav__content-one {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+
+    .logo {
+      font-family: 'Chela One', sans-serif;
+      color: $color-text;
+      font-size: 3rem;
+    }
+  }
+
+  .nav__content-two {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
-.container{
-background-color: $color-primary;
+
+.navbar a {
+  color: $color-text;
+  text-decoration: none;
+  margin: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav__content-two button {
+  color: $color-text;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.navbar #open {
+  padding-left: 0;
+}
+
+.navbar #open .hiddenLinks {
+  display: inherit;
+  margin-left: 30px;
+}
+
+.navbar #close .hiddenLinks {
+  display: none;
+}
+
+.navbar #open a {
+  width: 8rem;
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar .nav__content-two a {
+    width: 8rem;
+  }
+  .navbar .nav__content-one {
+    padding-left: 6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar .nav__content-two a {
+    display: none;
+  }
+
+  .navbar .nav__content-two {
+    justify-content: flex-end;
+    padding-right: 6rem;
+  }
+
+  .navbar .nav__content-two button {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar .nav__content-two button {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
 }
