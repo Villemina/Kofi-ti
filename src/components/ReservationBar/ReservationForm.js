@@ -1,5 +1,6 @@
-import React from 'react';
+import {useRef} from 'react';
 import emailjs from '@emailjs/browser';
+import './rezerwacje.scss'
 const ReservationForm = () => {
     const form = useRef()
     const sendEmail = (e) => {
@@ -14,17 +15,17 @@ const ReservationForm = () => {
     };
     return (
         <section>
-            <div className="container">
-                <h2 className="--text-center">Rezerwacja</h2>
-                <form ref={form}  onSubmit={sendEmail} className="--form-control--card">
+            <div className="container__reservation">
+                <h2 className="reservation__text-center">Rezerwacja</h2>
+                <form ref={form}  onSubmit={sendEmail} className="reservation__form-control">
                     <input type="text" placeholder="Imię" name='user_name' required/>
                     <input type="text" placeholder="Nazwisko" name='user_surname' required/>
                     <input type="email" placeholder="Email" name='user_email' required/>
                     <input type="tel" placeholder="Telefon" name='user_tel' required/>
                     <input type="date" placeholder="Data" name='user_date' required/>
                     <input type="text" placeholder="Ilość Osób" name='user_number'/>
-                    <textarea name="message" placeholder="Dodatkowe Uwagi" cols="30" rows="6"></textarea>>
-                    <button type='submit' className="--btn --btn-primary">Zarezerwuj Stolik</button>
+                    <textarea name="message" placeholder="Dodatkowe Uwagi" cols="40" rows="5"></textarea>
+                    <button type='submit' className="reservation__btn-primary">Zarezerwuj Stolik</button>
                 </form>
             </div>
         </section>
