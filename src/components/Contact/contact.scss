@@ -1,77 +1,90 @@
 @import "../scssVariables/basic/colors";
-.contact__container {
-  position: relative;
-  inset: 3rem;
-  width: 90vw;
-  height: 90vh;
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.contact {
+  background-color: $color-primary;
+  padding: 2rem 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $color-text;
-  color: $color-secondary;
 
-  .contact__header {
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 2rem;
-  }
+  .contact__container {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-hover;
+    color: $color-green;
+    box-shadow: inset 2px 4px 45px 0 $color-primary;
 
-  .contact__box {
-    position: relative;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-
-    .contact__box__header {
-      font-size: 2rem;
-      padding: 1rem;
+    h2 {
+      padding: 2rem 0;
+      font-size: 4rem;
+      font-family: 'Great Vibes', sans-serif;
     }
 
-    .contact__form__box {
-      padding: 1rem;
-      color: $color-secondary;
-      font-size: 1.25rem;
+    .contact__box {
+      position: relative;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      padding: 2rem 8rem;
 
-      .contact__field {
+      form {
         display: flex;
-        inline-size: 2rem;
-        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        width: 26rem;
+        padding-left: 1rem;
+        font-family: 'Great Vibes', sans-serif;
 
         input {
           height: 1.5rem;
+          width: 20rem;
           margin: 0.5rem 0;
-          padding: 0.75rem;
+          padding: 0.9rem;
+          border: none;
+          border-bottom: 1px solid $color-green;
+          background: none;
+          text-align: center;
+          font-size: 1.3rem;
         }
 
         textarea {
-          height: 10rem;
-          width: 27rem;
+          margin: 1rem;
+        }
+
+        button {
+          background-color: $color-green;
+          margin: 0.89rem;
+          padding: 0.5rem 2rem;
+          border: 1px solid transparent;
+          border-radius: 45px;
+          font-weight: bold;
+          letter-spacing: 0.2rem;
+
+          &:hover {
+            animation: pulsate 3s ease-in-out;
+          }
+
+          @keyframes pulsate {
+            0% {
+              box-shadow: 0 0 25px $color-green, 0 0 45px $color-accent;
+            }
+          }
         }
       }
-
-      .contact__input__send {
-        margin: 0.5rem;
-        padding: 10px 25px;
-        color: $color-buttons;
-        border: 1px transparent;
-        border-radius: 20px;
-        font-weight: bold;
-        background-color: $color-secondary;
-
-      }
-      .contact__input__send:hover {
-        background-color: $color-buttons;
-        color: $color-hover;
+    .contact__otherinfo{
+     margin-top: -1rem;
+      .contact__info-content{
+        margin:0.5rem;
+        .social__media-icons{
+          display: flex;
+          gap:1rem;
+          justify-content: center;
+        }
       }
     }
-    .contact__otherinfo{
-      margin-top: 1rem;
-      .contact__info__content{
-        margin: 1rem 0;
-        .social-media-icons a{
-          margin: 10px;
-        }
-      }
     }
   }
 }
