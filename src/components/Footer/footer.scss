@@ -1,4 +1,6 @@
 @import "../scssVariables/basic/colors";
+@import "../scssVariables/basic/features";
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,10 @@
   width: 100%;
   padding: 3rem;
   background-color: $color-text;
+  @include mobile {
+    align-items: center;
+    flex-direction: column;
+  }
 
   .container__footer-social {
     text-align: center;
@@ -17,32 +23,48 @@
 
     #facebook, #instagram, #tiktok {
       font-size: 2rem;
-      color: $color-red;
+      color: $color-blue;
       padding: 1rem;
       display: inline-block;
-      border: 1px solid $color-red;
+      border: 1px solid $color-blue;
       border-radius: 50%;
       margin: 0 1rem;
       opacity: 0.70;
+      @include mobile {
+        align-items: center;
+        font-size: 1.2rem;
+        margin: 0.5rem;
+      }
 
       &:visited {
         color: $color-blue;
       }
+
       &:hover {
         opacity: 0.90;
       }
     }
   }
-  .container__footer-list{
+
+  .container__footer-list {
     list-style: none;
     font-size: 1.5rem;
     line-height: 1.5;
     display: flex;
     justify-content: space-evenly;
     margin-left: 8rem;
-    a{
-      text-decoration: none;
+
+    button {
       color: $color-red;
+      background: none;
+      border: none;
+    }
+
+    @include mobile {
+
+      align-items: center;
+      font-size: 1.2rem;
+      margin: 0.5rem;
     }
   }
 }
