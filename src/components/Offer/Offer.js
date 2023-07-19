@@ -2,7 +2,8 @@ import React from 'react';
 import icedCoffeeImage from './images/iced-coffee.png';
 import drinksImage from './images/Drinks-14-500x500.jpg';
 import snackImage from './images/przekaska.jpg';
-import './offer.scss'
+import './offer.scss';
+
 
 const OfferSection = () => {
     return (

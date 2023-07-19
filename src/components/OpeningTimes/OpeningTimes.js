@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './openingTimes.scss';
 import clockImage from './images/clock.png';
-import icedCoffeeImage from "../Offer/images/iced-coffee.png";
+
 
 const OpeningTimes = () => {
     const WallClock = () => {

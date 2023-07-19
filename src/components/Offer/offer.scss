@@ -1,4 +1,5 @@
 @import "../scssVariables/basic/colors";
+@import "../scssVariables/basic/features";
 
 .offer__section__container {
   display: flex;
@@ -6,19 +7,31 @@
   background-color: $color-primary;
   width: 100%;
   padding: 2rem;
+  @include mobile {
+    flex-direction: column;
+    width: 100%;
+    }
 
   .offer__display-box {
     padding: 2rem;
     background-color: $color-pink;
-    margin: 4rem 1rem ;
+    margin: 4rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    &:hover{
+    @include mobile {
+      margin: 1rem;
+    }
+
+    &:hover {
       transform: scale(1.1);
       filter: drop-shadow(0.75rem 0.75rem 0.5rem);
     }
-
+    @include mobile {
+      margin: 1rem;
+      &:hover{
+        transform: none    }
+    }
 
     .offer-image {
       width: 20rem;
