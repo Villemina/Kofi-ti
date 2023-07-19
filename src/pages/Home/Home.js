@@ -5,10 +5,12 @@ import OpeningTimes from "../../components/OpeningTimes/OpeningTimes";
 import AboutSection from "../../components/AboutSection/AboutSection";
 import OfferSection from "../../components/Offer/Offer";
 import ReservationBar from "../../components/ReservationBar/ReservationBar";
+import Menu from "../../components/Menu/Menu";
 
 const Home = () => {
     return (
 <div>
+    <Menu/>
     <ReservationBar/>
     <Slider/>
     <OfferSection/>
