@@ -27,7 +27,7 @@ function Menu() {
             <div className="nav__content-two">
                 <Link to="/"> Strona Główna </Link>
                 <Link to="/menu"> Menu </Link>
-                <Link to="/about"> Wydarzenia </Link>
+                <Link to="/events"> Wydarzenia </Link>
                 <Link to="/contact"> Kontakt </Link>
                 <button onClick={toggleNavbar}>
                     <FaBars />

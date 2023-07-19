@@ -1,22 +1,20 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ThemeProvider from 'react-bootstrap/ThemeProvider'
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import About from "./pages/About/About";
-import Menu from "./components/Menu/Menu";
 import Contact from "./pages/Contact/Contact";
+import Events from "./pages/Events/Events";
+import CaffeMenu from "./pages/CaffeMenu/CaffeMenu";
 
 function App() {
   return (
       <ThemeProvider
           breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
-          minBreakpoint="xxs"
-      >
-          <Menu/>
+          minBreakpoint="xxs">
           <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="about" element={<About />} />
-              <Route path="about" element={<About />} />
+              <Route path="menu" element={<CaffeMenu />} />
+              <Route path="events" element={<Events />} />
               <Route path="contact" element={<Contact />} />
           </Routes>
       </ThemeProvider>
