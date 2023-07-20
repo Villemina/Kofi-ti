@@ -9,6 +9,7 @@ import './contact.scss'
 const ContactForm = () => {
     const form = useRef()
     const address ="ul. Warszawska 15, Radzyń Podlaski, Polska";
+    const number= "577 803 851";
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -42,7 +43,7 @@ const ContactForm = () => {
                             <FontAwesomeIcon icon={faLocationDot} /> {address}
                         </div>
                         <div className="contact__info-content">
-                            <FontAwesomeIcon icon={faPhone} /> 577 803 851
+                            <FontAwesomeIcon icon={faPhone} /> {number}
                         </div>
                         <div className="contact__info-content">
                             <div className="social__media-icons">
@@ -59,6 +60,7 @@ const ContactForm = () => {
                         </div>
                         <div className="contact__map">
                             <iframe
+                                title="Lokalizacja na mapie"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d617.0756096672893!2d22.615679469634603!3d51.78235839824234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472219374c6475a3%3A0xf46fd30c054b40d0!2sKofi%20%26%20Ti%20-%20Coffee%20and%20Tea%20Art!5e0!3m2!1sen!2spl!4v1688076408967!5m2!1sen!2spl"
                                 width="300" height="250" style={{border: 0}} allowFullScreen="" loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"></iframe>

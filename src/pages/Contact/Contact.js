@@ -6,7 +6,7 @@ import ContactForm from "../../components/Contact/ContactForm";
 const Contact = () => {
     return (
         <div>
-
+            <Menu/>
             <ContactForm/>
             <Footer/>
         </div>
