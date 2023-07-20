@@ -5,6 +5,7 @@ import MenuEvents from "../../components/MenuEvents/MenuEvents";
 import EventsCard from "../../components/EventsCards/EventsCard";
 
 
+
 const Events = () => {
     return (
         <div>
