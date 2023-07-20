@@ -1,0 +1,88 @@
+{
+  "menu": [
+    {
+      "id": 1,
+      "name": "Espresso (30ml)",
+      "category": "Kawy",
+      "description": "szot espresso",
+      "price": "7/6*zł"
+    },
+    {
+      "id": 2,
+      "name": "Doppio (60ml)",
+      "category": "Kawy",
+      "description": "2x espresso",
+      "price": "10/9*zł"
+    },
+    {
+      "id": 3,
+      "name": "Americano (300ml)",
+      "category": "Kawy",
+      "description": "czarna kawa",
+      "price": "11/10*zł"
+    },
+    {
+      "id": 4,
+      "name": "Mini Americano (150ml)",
+      "category": "Kawy",
+      "description": "mała kawa",
+      "price": "8/7*zł"
+    },
+    {
+      "id": 5,
+      "name": "White kofi (30ml)",
+      "category": "Kawy",
+      "description": "mała kawa z mlekiem",
+      "price": "7/6*zł"
+    },
+    {
+      "id": 6,
+      "name": "Cappuccino (300ml)",
+      "category": "Kawy",
+      "description": "espresso z spienionym mlekiem",
+      "price": "10/11*zł"
+    },
+    {
+      "id": 7,
+      "name": "Mini Capuccino (150ml)",
+      "category": "Kawy",
+      "description": "mała kawa z spienionym  mlekiem",
+      "price": "7/6*zł"
+    },
+    {
+      "id": 8,
+      "name": "Latte(220ml)",
+      "category": "Kawy",
+      "description": "mała kawa z mlekiem",
+      "price": "11/10*zł"
+    },
+    {
+      "id": 9,
+      "name": "Latte piernikowe (350ml)",
+      "category": "Kawy",
+      "description": "sos toffi i syrop piernikowy",
+      "price": "16/15*zł"
+    },
+    {
+      "id": 10,
+      "name": " Latte na bogato (220ml)",
+      "category": "Kawy",
+      "description": "bita śmietana + syrop",
+      "price": "14/13*zł"
+    },
+    {
+      "id": 11,
+      "name": "Latte zbożowe(220ml)",
+      "category": "Kawy",
+      "description": "inka zamiast esspresso",
+      "price": "10/9*zł"
+    },
+    {
+      "id": 10,
+      "name": "Herbata zimowa (600ml)",
+      "category": "Kawy",
+      "description": "Herbata czarna, pomarancza, miód goździki",
+      "price": "11/10*zł"
+    }
+  ]
+}
