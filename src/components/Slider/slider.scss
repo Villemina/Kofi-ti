@@ -1,13 +1,13 @@
 @import "../scssVariables/basic/colors";
-
+@import "../scssVariables/basic/features";
 
 .slider-background {
   background-color: $color-primary;
 }
 
 .slider {
-  margin: 0 8%;
-  width: 84%;
+  inset: 4%;
+  width: 92%;
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -19,7 +19,8 @@
     width: 100%;
     height: 100%;
     transform: translateX(0);
-    transition: all 0.5s ease;
+    transition: all 1s ease-in-out;
+
   }
 }
 
@@ -51,6 +52,9 @@
   animation-fill-mode: forwards;
   visibility: hidden;
   transition: all 500ms ease-in;
+  @include mobile {
+    top:1rem;
+  }
 
   > * {
     color: $color-text;

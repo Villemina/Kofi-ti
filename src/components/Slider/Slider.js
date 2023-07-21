@@ -31,11 +31,11 @@ const Slider = () => {
     }, []);
 
     useEffect(() => {
-        if(autoScroll){
-            auto()
+        if (autoScroll) {
+            auto();
         }
-        return()=>clearInterval(slideInterval)
-    }, [currentSlide]);
+        return () => clearInterval(slideInterval);
+    }, [currentSlide, autoScroll, slideInterval]);
 
     return (
         <div className="slider-background">

@@ -25,7 +25,8 @@ const ReservationBar = () => {
                     },
                     content: {
                         padding: 0,
-                        inset: "3rem 10rem",
+                        inset: "3rem 5rem",
+                        overflow: "hidden",
 
                     },
                 }}

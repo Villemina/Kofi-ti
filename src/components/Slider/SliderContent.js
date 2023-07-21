@@ -1,9 +1,8 @@
-import React from 'react';
 import coffeeFlowerImage from './images/coffee-flower.jpg';
 import collageImage from './images/collage.jpg';
 import interiorImage from './images/interior.jpg';
 import latteArtImage from './images/latte-art-@harshlight-1024x683.jpg';
-import logoImage from './images/logo.jpg';
+import logoImage from '../Menu/images/logo.jpg';
 import menuImage from './images/menu.jpg';
 import productImage from './images/product.jpg';
 import promoImage from './images/promo.jpg';
@@ -32,7 +31,7 @@ export const SliderContent = [
         image: latteArtImage,
         heading: "Kawa jako napój towarzyszący spotkaniom i rozmowom",
         desc:
-            "Kawa od wieków pełniła rolę towarzysza spotkań i rozmów. Jej aromatyczny zapach i energetyzujące właściwości sprzyjały atmosferze dyskusji i interakcji społecznych. Od przyjacielskich spotkań po biznesowe negocjacje, kawa zawsze była obecnym napojem, który łagodził napięcie i sprzyjał luźnej rozmowie. Jej udział w życiu społecznym stał się powszechny na całym świecie, tworząc niepowtarzalne momenty i umożliwiając nawiązywanie więzi międzyludzkich przy filiżance aromatycznego napoju.",
+            "Kawa od wieków pełniła rolę towarzysza spotkań i rozmów. Jej aromatyczny zapach i energetyzujące właściwości sprzyjały atmosferze dyskusji i interakcji społecznych. Od przyjacielskich spotkań po biznesowe negocjacje, kawa zawsze była obecnym napojem, który łagodził napięcie i sprzyjał luźnej rozmowie. Jej udział w życiu społecznym stał się powszechny na całym świecie, tworząc niepowtarzalne momenty .",
     },
     {
         image: logoImage,
