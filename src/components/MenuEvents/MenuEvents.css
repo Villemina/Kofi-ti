@@ -1,0 +1,19 @@
+
+.navbar{
+    background: #49111C;
+}
+.flex{
+
+    justify-content: space-between;
+}
+.brand {
+    color: #EAD2AC;
+    font-size: 3rem;
+    font-family: 'Chela One', sans-serif;
+}
+
+.nav-link{
+    color: #EAD2AC;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
