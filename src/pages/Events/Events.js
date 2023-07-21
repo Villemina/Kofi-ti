@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from "../../components/Footer/Footer";
 import EventsGallery from "../../components/EventsGallery/EventsGallery";
-import MenuEvents from "../../components/MenuEvents/MenuEvents";
+import Menu from "../../components/Menu/Menu";
 import EventsCard from "../../components/EventsCards/EventsCard";
 
 
@@ -9,7 +9,7 @@ import EventsCard from "../../components/EventsCards/EventsCard";
 const Events = () => {
     return (
         <div>
-            <MenuEvents/>
+            <Menu/>
             <EventsGallery/>
             <EventsCard/>
             <Footer/>

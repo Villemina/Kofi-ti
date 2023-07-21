@@ -1,53 +1,78 @@
 @import "../scssVariables/basic/colors";
 @import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Poppins:wght@400;700&display=swap');
 
-.header {
-  width: 100%;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: $color-primary;
-  z-index: 100;
   padding: 1rem;
 
-  .nav__container {
-    height: 5rem;
+  .nav__logo {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
-    .nav__logo {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-
-      &-image {
-        width: 100px;
-        height: auto;
-        border: 1px solid transparent;
-        border-radius: 50%;
-      }
-
-      &-text {
-        font-family: 'Chela One', sans-serif;
-        color: $color-text;
-        font-size: 3rem;
-      }
+    .nav__logo-image {
+      width: 4rem;
+      height: 4rem;
+      border: 1px solid transparent;
+      border-radius: 50%;
     }
 
+    .nav__logo-text {
+      margin-left: 1rem;
+      font-size: 3rem;
+      color: $color-text;
+      font-family: 'Chela One', sans-serif;
+    }
+  }
+
+  .nav__menu {
+    list-style: none;
+    display: flex;
+
+    .nav__menu-item {
+      margin-right: 2rem;
+      font-size: 2rem;
+      text-decoration: none;
+      color: $color-text;
+    }
+  }
+
+  .nav__toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+  }
+
+
+  @media screen and (max-width: 768px) {
     .nav__menu {
-      display: block;
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 5rem;
+      left: 0;
+      right: 0;
+      background-color:$color-primary;
+      padding: 1rem;
+      z-index: 1000;
 
-      .nav__menu-list {
+      &.open {
+        display: flex;
+      }
 
-        .nav__menu-item {
-          text-decoration: none;
-          color: $color-text;
-          margin-right: 3rem;
-          font-size: 1.5rem
-        }
+      .nav__menu-item {
+        margin-bottom: 1rem;
       }
     }
 
     .nav__toggle {
-      display: none;
+      display: block;
+      margin-right: 1rem;
+      color: $color-text;
     }
   }
 }

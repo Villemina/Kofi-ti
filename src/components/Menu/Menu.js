@@ -1,42 +1,40 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { FaBars, FaTimes } from 'react-icons/fa';
+import React, {useState} from "react";
+import {Link} from "react-router-dom";
+import LogoImage from './images/logo.jpg'
+import {FaBars, FaTimes} from 'react-icons/fa';
 import './menu.scss';
 
 function Menu() {
-    const [openLinks, setOpenLinks] = useState(false);
-    const [closeLinks, setCloseLinks] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-    const toggleCloseNavbar = () => {
-        setCloseLinks(!closeLinks);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
     };
-    const toggleNavbar = () => {
-        setOpenLinks(!openLinks);
-    };
+
     return (
-        <div className="navbar">
-            <div className="nav__content-one" id={openLinks ? "open" : "close"}>
-                <h2 className="logo">Kofi&Ti</h2>
-                <div className="hiddenLinks">
-                    <Link to="/"> Strona Główna </Link>
-                    <Link to="/menu"> Menu </Link>
-                    <Link to="/about"> Wydarzenia </Link>
-                    <Link to="/contact"> Kontakt </Link>
-                </div>
+        <nav className={`navbar ${isOpen ? "open" : ""}`}>
+            <div className="nav__logo">
+                <img src={LogoImage} alt="shop logo" className="nav__logo-image" />
+                <h2 className="nav__logo-text">Kofi&Ti</h2>
             </div>
-            <div className="nav__content-two">
-                <Link to="/"> Strona Główna </Link>
-                <Link to="/menu"> Menu </Link>
-                <Link to="/events"> Wydarzenia </Link>
-                <Link to="/contact"> Kontakt </Link>
-                <button onClick={toggleNavbar}>
-                    <FaBars />
-                </button>
-                <button onClick={toggleCloseNavbar}>
-                     <FaTimes/>
-                </button>
-            </div>
-        </div>
+            <ul className={`nav__menu ${isOpen ? "open" : ""}`}>
+                <Link to="/" className="nav__menu-item" onClick={toggleMenu}>
+                    Strona Główna
+                </Link>
+                <Link to="/menu" className="nav__menu-item" onClick={toggleMenu}>
+                    Menu
+                </Link>
+                <Link to="/events" className="nav__menu-item" onClick={toggleMenu}>
+                    Wydarzenia
+                </Link>
+                <Link to="/contact" className="nav__menu-item" onClick={toggleMenu}>
+                    Kontakt
+                </Link>
+            </ul>
+            <button className="nav__toggle" onClick={toggleMenu}>
+                {isOpen ? <FaTimes />: <FaBars /> }
+            </button>
+        </nav>
     );
 }
 

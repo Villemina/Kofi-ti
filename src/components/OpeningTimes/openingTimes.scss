@@ -28,67 +28,68 @@
       opacity: 0.75;
       transform: scale(1.1);
     }
-  }
-
-  .clock-circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background-color: $color-red;
-    border-radius: 50%;
-    z-index: 1000;
-  }
-
-  .clock-image {
-    width: 350px;
-    height: 350px;
-  }
-
-  .hour-hand,
-  .minute-hand,
-  .second-hand {
-    position: absolute;
-    background-color: $color-red;
-    transform-origin: bottom;
 
 
-  }
+    .clock-circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      background-color: $color-red;
+      border-radius: 50%;
+      z-index: 1000;
+    }
 
-  .hour-hand {
-    width: 6px;
-    height: 80px;
-    border-radius: 6px;
-    transform: rotate(0deg);
-    top: 4.25rem;
-  }
+    .clock-image {
+      width: 350px;
+      height: 350px;
+    }
 
-  .minute-hand {
-    width: 4px;
-    height: 120px;
-    border-radius: 4px;
-    transform: rotate(0deg);
-    top: 2rem;
-  }
+    .hour-hand,
+    .minute-hand,
+    .second-hand {
+      position: absolute;
+      background-color: $color-red;
+      transform-origin: bottom;
 
-  .second-hand {
-    width: 2px;
-    height: 140px;
-    border-radius: 2px;
-    transform: rotate(0deg);
-    background-color: $color-footer;
-    top: 0.97rem;
 
-  }
+    }
 
-  .clock-text {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px;
+    .hour-hand {
+      width: 6px;
+      height: 80px;
+      border-radius: 6px;
+      transform: rotate(0deg);
+      top: 4.25rem;
+    }
+
+    .minute-hand {
+      width: 4px;
+      height: 120px;
+      border-radius: 4px;
+      transform: rotate(0deg);
+      top: 2rem;
+    }
+
+    .second-hand {
+      width: 2px;
+      height: 140px;
+      border-radius: 2px;
+      transform: rotate(0deg);
+      background-color: $color-footer;
+      top: 0.97rem;
+
+    }
+
+    .clock-text {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+    }
   }
 
   .opening__times-card {
@@ -108,19 +109,9 @@
       list-style: none;
 
 
-      .opening__times-header {
+      &-header {
         text-align: center;
         margin-bottom: 10px;
-      }
-
-      .opening__times-content {
-        font-size: 16px;
-      }
-
-      .opening__times-list {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
       }
 
       .opening-day {
