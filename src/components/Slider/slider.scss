@@ -29,12 +29,12 @@
   transform: translateX(0%);
 }
 
-@media screen and (min-width: 600px) {
-  .slide img {
-    height: 100%;
-    width: 100%;
-  }
+
+.slide img {
+  height: 100%;
+  width: 100%;
 }
+
 
 .current {
   opacity: 1;
@@ -53,7 +53,9 @@
   visibility: hidden;
   transition: all 500ms ease-in;
   @include mobile {
-    top:1rem;
+    width: 85%;
+    position: absolute;
+    left: 2rem;
   }
 
   > * {
@@ -62,7 +64,7 @@
     margin-bottom: 1rem;
   }
 
-  .--btn-primary {
+  .btn-primary {
     padding: 0.35rem 1rem;
     border: 1px solid transparent;
     border-radius: 20px;
@@ -104,8 +106,14 @@
 
 .arrow-prev {
   left: 2rem;
+  @include mobile {
+    left: -0.5rem;
+  }
 }
 
 .arrow-next {
   right: 2rem;
+  @include mobile {
+    right: -0.5rem;
+  }
 }

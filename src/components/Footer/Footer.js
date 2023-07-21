@@ -1,14 +1,24 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './footer.scss';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faFacebook, faInstagram, faTiktok} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import Modal from "react-modal";
 
 const Footer = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpenTwo, setIsOpenTwo] = useState(false);
+    const [isOpenThree, setIsOpenThree] = useState(false);
 
     const togglePopup = () => {
         setIsOpen(!isOpen);
+    };
+
+    const togglePopupTwo = () => {
+        setIsOpenTwo(!isOpenTwo);
+    };
+
+    const togglePopupThree = () => {
+        setIsOpenThree(!isOpenThree);
     };
 
     const customStyles = {
@@ -17,22 +27,21 @@ const Footer = () => {
         },
         content: {
             padding: "2rem",
-            inset: "20rem 10rem",
+            inset: "10rem 10rem",
         },
     };
 
     return (
         <footer className="container__footer">
             <div className="container__footer-social">
-                <a href="https://www.facebook.com/kawiarnia.kofiti/?locale=pl_PL" target="_blank"
-                   rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faFacebook} className="icon" size="2x" id="facebook"/>
+                <a href="https://www.facebook.com/kawiarnia.kofiti/?locale=pl_PL" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faFacebook} className="icon" size="2x" id="facebook" />
                 </a>
                 <a href="https://www.instagram.com/kawiarnia_kofiti/?hl=en" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faInstagram} className="icon" size="2x" id="instagram"/>
+                    <FontAwesomeIcon icon={faInstagram} className="icon" size="2x" id="instagram" />
                 </a>
                 <a href="https://www.tiktok.com/@kofiti" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faTiktok} className="icon" size="2x" id="tiktok"/>
+                    <FontAwesomeIcon icon={faTiktok} className="icon" size="2x" id="tiktok" />
                 </a>
             </div>
             <ul className="container__footer-list">
@@ -60,31 +69,32 @@ const Footer = () => {
                     )}
                 </li>
                 <li>
-                    <button onClick={togglePopup}>Kontakt</button>
-                    {isOpen && (
+                    <button onClick={togglePopupTwo}>Kontakt</button>
+                    {isOpenTwo && (
                         <Modal
-                            isOpen={isOpen}
-                            onRequestClose={togglePopup}
+                            isOpen={isOpenTwo} // Fixed: isOpenTwo was incorrect
+                            onRequestClose={togglePopupTwo}
                             style={customStyles}
                         >
                             <div className="popup">
                                 <div className="popup-content">
                                     <h2>"Kofi&Ti" Kawiarnia i Herbaciarnia Artystyczna</h2>
                                     <p>
-                                        Znaleść nas mozesz na ulicy Warszawska 15, Radzyń Podlaski, Polska
-                                        Lub zadwonić na 577 803 851
+                                        Znajdziesz nas na ulicy Warszawska 15, Radzyń Podlaski, Polska
+                                        Lub zadzwonić pod numer 577 803 851
                                     </p>
-                                    <button onClick={togglePopup}>zamknij</button>
+                                    <button onClick={togglePopupTwo}>zamknij</button>
                                 </div>
                             </div>
                         </Modal>
-                    )}</li>
+                    )}
+                </li>
                 <li>
-                    <button onClick={togglePopup}>Polityka prywatności</button>
-                    {isOpen && (
+                    <button onClick={togglePopupThree}>Polityka prywatności</button>
+                    {isOpenThree && (
                         <Modal
-                            isOpen={isOpen}
-                            onRequestClose={togglePopup}
+                            isOpen={isOpenThree} // Fixed: isOpenThree was incorrect
+                            onRequestClose={togglePopupThree}
                             style={customStyles}
                         >
                             <div className="popup">
@@ -106,11 +116,12 @@ const Footer = () => {
                                         funkcjonalności i użytkowalności.
 
                                     </p>
-                                    <button onClick={togglePopup}>zamknij</button>
+                                        <button onClick={togglePopupThree}>zamknij</button>
                                 </div>
                             </div>
                         </Modal>
-                    )}</li>
+                    )}
+                </li>
             </ul>
             <div className="container__footer-copyright">
                 © Kofi&Ti

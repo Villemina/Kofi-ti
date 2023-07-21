@@ -63,7 +63,7 @@ const Slider = () => {
                                         <h2>{slide.heading}</h2>
                                         <p>{slide.desc}</p>
                                         <hr/>
-                                        <button className="--btn-primary">Zamów</button>
+                                        <button className="btn-primary">Zamów</button>
                                     </div>
                                 </>
                             )}
