@@ -13,7 +13,7 @@ function EventsCard() {
         <Container style={{backgroundColor: 'palegoldenrod', padding: '1rem',}} fluid>
             <CardGroup className="mb-5">
                 <Card className="text-light mx-2 bg-success">
-                    <Card.Img variant="top" src={FloraImage}/>
+                    <Card.Img variant="top" src={FloraImage} alt="zaproszenie na warsztaty florystyczne"/>
                     <Card.Body>
                         <Card.Title>Warsztaty Florystyczne</Card.Title>
                         <Card.Text>
@@ -28,7 +28,7 @@ function EventsCard() {
                     </Card.Footer>
                 </Card>
                 <Card className="text-light mx-2 bg-success">
-                    <Card.Img variant="top" src={WalentynkiImage}/>
+                    <Card.Img variant="top" src={WalentynkiImage} alt="zaproszenie na event walentynkowy"/>
                     <Card.Body>
                         <Card.Title>Eventy Dla Par i Singli</Card.Title>
                         <Card.Text>
@@ -42,7 +42,7 @@ function EventsCard() {
                     </Card.Footer>
                 </Card>
                 <Card className="text-light mx-2 bg-success">
-                    <Card.Img variant="top" src={DegustacjaImage}/>
+                    <Card.Img variant="top" src={DegustacjaImage} alt="zaproszenie na degustacje serów i win"/>
                     <Card.Body>
                         <Card.Title>Warsztaty Ser i Wino!</Card.Title>
                         <Card.Text>
@@ -56,7 +56,7 @@ function EventsCard() {
                     </Card.Footer>
                 </Card>
                 <Card className="text-light mx-2 bg-success">
-                    <Card.Img variant="top" src={JesienImage}/>
+                    <Card.Img variant="top" src={JesienImage} alt="zaproszenie na warsztaty Kosmetyczne"/>
                     <Card.Body>
                         <Card.Title>Eventy Tematyczne</Card.Title>
                         <Card.Text>

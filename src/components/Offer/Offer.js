@@ -18,7 +18,7 @@ const OfferSection = () => {
                     doświadczeniu.
                 </p>
                 <button className="btn-secondary">
-                    <a href="#menu" className="menu-nav">Zobacz naszą ofertę</a>
+                    <a href="/menu" className="menu-nav">Zobacz naszą ofertę</a>
                 </button>
             </div>
             <div className="offer__display-box">
@@ -30,7 +30,7 @@ const OfferSection = () => {
                     chłodnych łykach, które ożywią twój nastrój. Dołącz do naszej niezapomnianej podróży smaków już dziś!
                 </p>
                 <button className="btn-secondary">
-                    <a href="#menu" className="menu-nav">Zobacz naszą ofertę</a>
+                    <a href="/menu" className="menu-nav">Zobacz naszą ofertę</a>
                 </button>
             </div>
             <div className="offer__display-box">
@@ -42,7 +42,7 @@ const OfferSection = () => {
                     podróż do niebiańskiego raju smaków. Ciesz się aromatycznymi napojami i osiągnij harmonię smaków.
                 </p>
                 <button className="btn-secondary">
-                    <a href="#menu" className="menu-nav">Zobacz naszą ofertę</a>
+                    <a href="/menu" className="menu-nav">Zobacz naszą ofertę</a>
                 </button>
             </div>
         </section>
