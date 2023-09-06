@@ -8,7 +8,9 @@ const Slider = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const autoScroll = true
     let slideInterval;
-    let intervalTime = 9000;
+    let intervalTime = 9000
+
+
 
     const goToNextSlide = () => {
         setCurrentSlide((prevSlide) =>
@@ -63,7 +65,6 @@ const Slider = () => {
                                         <h2>{slide.heading}</h2>
                                         <p>{slide.desc}</p>
                                         <hr/>
-                                        <button className="btn-primary">Zamów</button>
                                     </div>
                                 </>
                             )}
