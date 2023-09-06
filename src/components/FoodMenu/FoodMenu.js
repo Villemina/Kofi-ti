@@ -11,7 +11,7 @@ const FoodMenu = () => {
     }, []);
 
     const menuGrid = async () => {
-        const response = await fetch(ApiUrl); // Removed quotes around ApiUrl
+        const response = await fetch(ApiUrl);
         const jsonData = await response.json();
         setMenu(jsonData);
     };
